@@ -1,0 +1,6 @@
+{
+  "identifier": "default",
+  "description": "Default capability for the spike-7 panel window",
+  "windows": ["panel"],
+  "permissions": ["core:default"]
+}

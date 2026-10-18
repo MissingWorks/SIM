@@ -1,0 +1,70 @@
+[1792285600991] spike7 started
+[1792285602634] panel built (visible)
+[1792285602675] tray built; target tracker running (200ms)
+[1792285636703] [paste] clipboard set (marker) at 0.44ms
+[1792285636703] [paste] target: Notepad.exe (pid 24036) captured 5666ms ago
+[1792285636704] [paste] panel hidden at 24.8ms; waiting 60ms
+[1792285636704] [paste] SetForegroundWindow direct -> fg_match=true at 100.2ms
+[1792285636705] [paste] Ctrl+V sent at 100.2ms
+[1792285636705] [paste] fg_ok=true direct=true alt_used=false
+[1792285636706] RESULT delay=60 alt=true direct=true final_fg=true
+[1792285649612] panel shown
+[1792285667580] copy-only: clipboard set (marker) #2
+[1792285672002] copy-only: clipboard set (marker) #3
+[1792285673195] copy-only: clipboard set (marker) #4
+[1792285692725] [paste] clipboard set (marker) at 0.23ms
+[1792285692726] [paste] target: OpenCode.exe (pid 12496) captured 909ms ago
+[1792285692726] [paste] panel hidden at 21.9ms; waiting 100ms
+[1792285692727] [paste] SetForegroundWindow direct -> fg_match=true at 137.6ms
+[1792285692727] [paste] Ctrl+V sent at 137.7ms
+[1792285692728] [paste] fg_ok=true direct=true alt_used=false
+[1792285692728] RESULT delay=100 alt=true direct=true final_fg=true
+[1792285696234] panel shown
+[1792285697555] copy-only: clipboard set (marker) #6
+[1792285698458] copy-only: clipboard set (marker) #7
+[1792285701674] copy-only: clipboard set (marker) #8
+[1792285706627] copy-only: clipboard set (marker) #9
+[1792285708970] copy-only: clipboard set (marker) #10
+[1792285711434] copy-only: clipboard set (marker) #11
+[1792285712003] copy-only: clipboard set (marker) #12
+[1792285712898] copy-only: clipboard set (marker) #13
+[1792285713698] [paste] clipboard set (marker) at 0.12ms
+[1792285713698] [paste] target: explorer.exe (pid 3100) captured 7643ms ago
+[1792285713699] [paste] panel hidden at 26.1ms; waiting 100ms
+[1792285713699] [paste] SetForegroundWindow direct -> fg_match=true at 142.0ms
+[1792285713699] [paste] Ctrl+V sent at 142.0ms
+[1792285713700] [paste] fg_ok=true direct=true alt_used=false
+[1792285713700] RESULT delay=100 alt=false direct=true final_fg=true
+[1792285909405] panel shown
+[1792285913328] [paste] clipboard set (marker) at 0.12ms
+[1792285913329] [paste] target: explorer.exe (pid 3100) captured 1205ms ago
+[1792285913329] [paste] panel hidden at 24.3ms; waiting 100ms
+[1792285913329] [paste] SetForegroundWindow direct -> fg_match=true at 140.2ms
+[1792285913330] [paste] Ctrl+V sent at 140.2ms
+[1792285913330] [paste] fg_ok=true direct=true alt_used=false
+[1792285913330] RESULT delay=100 alt=false direct=true final_fg=true
+[1792286262728] spike7 started
+[1792286263434] panel shown
+[1792286263434] panel built (visible)
+[1792286263465] tray built; target tracker running (200ms)
+[1792286263465] hotkey Win+Alt+V registered
+[1792286265999] [paste] no target captured yet
+[1792286267228] copy-only: clipboard set (marker) #1
+[1792286273657] [paste] clipboard set (marker) at 0.13ms
+[1792286273657] [paste] target: Discord.exe (pid 15096) captured 1479ms ago
+[1792286273657] [paste] panel hidden at 16.4ms; waiting 60ms
+[1792286273658] [paste] SetForegroundWindow direct -> fg_match=true at 92.3ms
+[1792286273658] [paste] Ctrl+V sent at 92.3ms
+[1792286273658] [paste] fg_ok=true direct=true alt_used=false
+[1792286273659] RESULT delay=60 alt=true direct=true final_fg=true
+[1792286280355] panel shown
+[1792286283705] panel hidden by tray toggle
+[1792286284871] panel shown
+[1792286286509] [paste] clipboard set (marker) at 0.13ms
+[1792286286510] [paste] target: chrome.exe (pid 18160) captured 3902ms ago
+[1792286286510] [paste] panel hidden at 22.2ms; waiting 60ms
+[1792286286510] [paste] SetForegroundWindow direct -> fg_match=true at 97.5ms
+[1792286286511] [paste] Ctrl+V sent at 97.5ms
+[1792286286511] [paste] fg_ok=true direct=true alt_used=false
+[1792286286511] RESULT delay=60 alt=true direct=true final_fg=true
+[1792286298512] panel shown

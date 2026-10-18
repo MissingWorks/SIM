@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Spike7</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #141414; color: #eaeaea; font-family: "Segoe UI", sans-serif; }
+    .hdr { padding: 10px 14px; font-weight: 600; background: #1d1d1d; border-bottom: 1px solid #333; }
+    .body { padding: 14px; font-size: 14px; }
+    .row { margin: 8px 0; display: flex; gap: 10px; align-items: center; }
+    select, button { font-size: 14px; padding: 6px 10px; border-radius: 6px; border: 1px solid #444; background: #222; color: #eaeaea; cursor: pointer; }
+    button.primary { background: #2f6f3e; border-color: #2f6f3e; font-weight: 600; }
+    #status { margin-top: 10px; min-height: 120px; white-space: pre-wrap; background: #0e0e0e; border: 1px solid #333; border-radius: 6px; padding: 10px; font-family: Consolas, monospace; font-size: 12px; color: #8ec07c; }
+    .hint { color: #9a9a9a; font-size: 12px; line-height: 1.5; }
+  </style>
+</head>
+<body>
+  <div class="hdr">SPIKE-7 — Paste Test</div>
+  <div class="body">
+    <p class="hint">1) ركّز نافذة الهدف (Notepad/Chrome/VS Code/admin). 2) افتح اللوحة من أيقونة الصينية. 3) اضغط Paste (أو Enter).</p>
+    <div class="row">
+      <label>تأخير الاستعادة: <select id="delay">
+        <option value="0">0 ms</option>
+        <option value="30">30 ms</option>
+        <option value="60" selected>60 ms</option>
+        <option value="100">100 ms</option>
+        <option value="150">150 ms</option>
+      </select></label>
+      <label><input type="checkbox" id="alt" checked /> خدعة ALT عند فشل المباشر</label>
+    </div>
+    <div class="row">
+      <button class="primary" id="paste">Paste (Enter)</button>
+      <button id="copyonly">Copy only (fallback msg)</button>
+    </div>
+    <div id="status">جاهز.</div>
+  </div>
+  <script>
+    const t = window.__TAURI__;
+    const status = document.getElementById('status');
+
+    async function paste() {
+      const delayMs = parseInt(document.getElementById('delay').value, 10);
+      const useAlt = document.getElementById('alt').checked;
+      status.textContent = 'pasting…';
+      try {
+        const report = await t.core.invoke('spike7_paste', { delayMs, useAlt });
+        status.textContent = report;
+      } catch (e) {
+        status.textContent = 'ERROR: ' + e;
+      }
+    }
+
+    document.getElementById('paste').addEventListener('click', paste);
+    document.getElementById('copyonly').addEventListener('click', async () => {
+      try {
+        status.textContent = await t.core.invoke('spike7_copy_only');
+      } catch (e) {
+        status.textContent = 'ERROR: ' + e;
+      }
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.repeat) paste();
+    });
+  </script>
+</body>
+</html>
