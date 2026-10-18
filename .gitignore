@@ -1,0 +1,28 @@
+# كود ومخرجات البناء
+code/target/
+code/**/target/
+code/**/node_modules/
+
+# مخرجات التغليف (عدا التوثيق)
+dist/*
+!dist/README.md
+
+# بيانات التشغيل المحلية (لا ترفع أبدًا)
+*.db
+*.db-wal
+*.db-shm
+*.log
+logs/
+blobs/
+
+# محررات وبيئات
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# أسرار وتوقيعات (احترازي)
+*.pem
+*.pfx
+.env
