@@ -7,7 +7,7 @@
 | الملف | الوصف |
 |---|---|
 | `icons/logo-light.svg` / `icons/logo-dark.svg` | شعار التطبيق — نسختا الثيم الفاتح/الداكن (SVG، viewBox 100×100)، أُضيف 2026-10-18 |
-| `icons/logo-light.png` / `icons/logo-dark.png` | نسختا PNG للشعار (200×200) للأماكن التي لا تدعم SVG |
+| `icons/logo-light.png` / `icons/logo-dark.png` | نسختا PNG للشعار (2000×2000 — جودة عالية) للأماكن التي لا تدعم SVG |
 
 يُعرض الشعار في `../README.md` عبر `<picture>` مع `prefers-color-scheme` (داكن → `logo-dark.svg`، فاتح → `logo-light.svg`).
 
