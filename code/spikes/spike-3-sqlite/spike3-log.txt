@@ -1,0 +1,53 @@
+=== Spike-3 SQLite bench (SIM phase 0) ===
+started epoch_ms=1792284682338
+AV: Windows Defender real-time real (verified externally = True)
+images: 1000 sizes 51200..5242880 bytes (uniform), thumb=12288 bytes, texts=10000
+
+--- MODE A: image BLOB inside SQLite ---
+  ddl: 31.24ms
+  [A] texts insert x10000: 30.7ms
+  [A] images insert x1000 (blob in db): 68272.8ms
+  size: db=2510.4MB wal=0.00MB pages=321333 freelist=0
+  cold/warm reads (fresh connection):
+  blob read [cold] id=7 sqlite_size=539431 actual=539431 time=10.78ms
+  blob read [cold] id=493 sqlite_size=5130659 actual=5130659 time=9.70ms
+  blob read [cold] id=986 sqlite_size=3381287 actual=3381287 time=6.44ms
+  blob read [warm] id=7 sqlite_size=539431 actual=539431 time=1.01ms
+  blob read [warm] id=493 sqlite_size=5130659 actual=5130659 time=9.49ms
+  blob read [warm] id=986 sqlite_size=3381287 actual=3381287 time=5.95ms
+  [A] thumbs list x50 (thumb bytes=614400): 4.90ms
+  delete x100 rows (+0 files): 70.9ms
+  incremental_vacuum: 0.3ms
+  size: db=2510.4MB wal=0.00MB pages=321332 freelist=31363
+  [A] texts list x50 (content bytes=6951): 0.16ms
+  [A] like-arabic count=5678: 4.5ms
+  [A] like-english count=5941: 3.4ms
+
+--- MODE B: image files on disk ---
+  ddl: 42.83ms
+  [B] texts insert x10000: 30.2ms
+  [B] images insert x1000 (files on disk): 31068.8ms
+  size: db=17.5MB wal=0.00MB pages=2235 freelist=0
+  blob dir size: 2492.7MB
+  cold/warm reads (fresh connection):
+  file read [cold] id=7 actual=539431 time=9.79ms
+  file read [cold] id=493 actual=5130659 time=3.57ms
+  file read [cold] id=986 actual=3381287 time=2.28ms
+  file read [warm] id=7 actual=539431 time=0.41ms
+  file read [warm] id=493 actual=5130659 time=3.79ms
+  file read [warm] id=986 actual=3381287 time=2.91ms
+  [B] thumbs list x50 (thumb bytes=614400): 0.74ms
+  delete x100 rows (+99 files): 144.7ms
+  incremental_vacuum: 0.2ms
+  size: db=17.5MB wal=0.00MB pages=2234 freelist=197
+  blob dir size after delete: 2249.0MB
+  [B] texts list x50 (content bytes=6951): 0.18ms
+  [B] like-arabic count=5678: 4.8ms
+  [B] like-english count=5941: 3.7ms
+
+=== SUMMARY (ms) ===
+texts insert 10k:      A=30.7   B=30.2
+images insert 1000:    A=68272.8   B=31068.8
+thumbs list 50:        A=4.90   B=0.74
+delete 100:            A=70.9   B=144.7
+done.

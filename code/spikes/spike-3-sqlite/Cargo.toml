@@ -1,0 +1,11 @@
+[package]
+name = "spike3-sqlite"
+version = "0.1.0"
+edition = "2021"
+
+[profile.release]
+opt-level = 3
+debug = false
+
+[dependencies]
+rusqlite = { version = "0.40.2", features = ["bundled"] }
