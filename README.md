@@ -1,5 +1,13 @@
 # SIM — Something Is Missing
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/icons/logo-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/icons/logo-light.svg">
+    <img src="assets/icons/logo-light.svg" alt="SIM" width="110">
+  </picture>
+</p>
+
 حزمة أدوات لويندوز مبنية حول فكرتين:
 
 1. **مركز تحكم** من قائمة ابدأ — للتحكم بإعدادات ويندوز والميزات (يُفتح نادرًا، للضبط).
