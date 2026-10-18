@@ -190,7 +190,7 @@ schema_version = 1
 language = "en"                # "en" | "ar"
 launch_at_login = true
 paste_mode = "auto"            # "auto" | "copy_only"
-prewarm_panel = true           # إنشاء نافذة اللوحة مخفية عند الإقلاع (من Spike-2)
+prewarm_panel = true           # إنشاء نافذة اللوحة مخفية عند الإقلاع (مثبت في Spike-2: يوفر فتحًا باردًا ~750ms بتكلفة +13MB — 2026-10-18)
 paste_restore_delay_ms = 80    # الانتظار بعد إعادة التركيز قبل SendInput
 
 [history]
@@ -341,7 +341,7 @@ CREATE INDEX IF NOT EXISTS clips_pinned_idx  ON clips(pinned) WHERE pinned = 1;
 
 - **إخفاء اللوحة:** حدث `WindowEvent::Focused(false)` → `hide()` (قابل للتعطيل من الإعدادات `hide_panel_on_blur`).
 - **التمرير الإلزامي للـ positioner:** `tauri_plugin_positioner::on_tray_event` يُستدعى دائمًا في معالج أيقونة الـ Tray قبل أي إظهار (وإلا يفشل `TrayCenter`).
-- **prewarm:** إن كان `prewarm_panel=true` تُنشأ نافذة اللوحة مخفية في الإقلاع (قرار Spike-2 بمقايضة ذاكرة ~40-80MB مقابل فتح فوري).
+- **prewarm:** إن كان `prewarm_panel=true` تُنشأ نافذة اللوحة مخفية في الإقلاع (قياس Spike-2 الفعلي 2026-10-18: +13.2MB — إجمالي 26.5MB — مقابل خفض الفتح من ~750ms بارد إلى 33.6–60.9ms).
 
 ## الاختصارات (Hotkeys)
 

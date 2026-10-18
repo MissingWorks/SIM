@@ -1,0 +1,1 @@
+{"default":{"identifier":"default","description":"Default capability for the spike-2 panel window","local":true,"windows":["panel"],"permissions":["core:default"]}}

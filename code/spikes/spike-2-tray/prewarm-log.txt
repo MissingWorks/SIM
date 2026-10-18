@@ -1,0 +1,80 @@
+[1792283355143] spike2 started, mode=prewarm
+[1792283356393] prewarm: panel webview built hidden
+[1792283356407] tray icon built
+[1792283356417] panel hidden (blur)
+[1792283356584] paint with no pending show (initial) after startup 1456.1 ms (js nav_ms=240.6)
+[1792283358040] show()+set_focus() returned in 14.53 ms
+[1792283358066] RESULT phase=after-show painted 42.0 ms after show request (js nav_ms=1724.2)
+[1792283359359] panel hidden (blur)
+[1792283359470] show()+set_focus() returned in 13.76 ms
+[1792283359499] RESULT phase=after-show painted 42.8 ms after show request (js nav_ms=3157.3)
+[1792283359905] panel hidden (blur)
+[1792283359991] show()+set_focus() returned in 13.76 ms
+[1792283360016] RESULT phase=after-show painted 39.0 ms after show request (js nav_ms=3674.2)
+[1792283360698] panel hidden (blur)
+[1792283380926] show()+set_focus() returned in 13.59 ms
+[1792283380950] RESULT phase=after-show painted 38.0 ms after show request (js nav_ms=24607.5)
+[1792283382384] panel hidden (blur)
+[1792283382470] show()+set_focus() returned in 13.77 ms
+[1792283382499] RESULT phase=after-show painted 42.5 ms after show request (js nav_ms=26157.5)
+[1792283382967] panel hidden (blur)
+[1792283383078] show()+set_focus() returned in 13.34 ms
+[1792283383099] RESULT phase=after-show painted 34.6 ms after show request (js nav_ms=26757.5)
+[1792283383326] panel hidden (blur)
+[1792283383358] show()+set_focus() returned in 26.70 ms
+[1792283383383] RESULT phase=after-show painted 51.6 ms after show request (js nav_ms=27040.7)
+[1792283383719] panel hidden (blur)
+[1792283383838] show()+set_focus() returned in 13.42 ms
+[1792283383867] RESULT phase=after-show painted 42.4 ms after show request (js nav_ms=27524.8)
+[1792283384160] panel hidden (blur)
+[1792283384192] show()+set_focus() returned in 25.17 ms
+[1792283384216] RESULT phase=after-show painted 50.0 ms after show request (js nav_ms=27874.2)
+[1792283384543] panel hidden (blur)
+[1792283384637] show()+set_focus() returned in 12.83 ms
+[1792283384667] RESULT phase=after-show painted 42.4 ms after show request (js nav_ms=28324.9)
+[1792283384991] panel hidden (blur)
+[1792283385104] show()+set_focus() returned in 14.45 ms
+[1792283385133] RESULT phase=after-show painted 43.5 ms after show request (js nav_ms=28790.8)
+[1792283385215] panel hidden (blur)
+[1792283385245] show()+set_focus() returned in 24.68 ms
+[1792283385266] RESULT phase=after-show painted 45.9 ms after show request (js nav_ms=28924.2)
+[1792283385423] panel hidden (blur)
+[1792283385510] show()+set_focus() returned in 14.46 ms
+[1792283385533] RESULT phase=after-show painted 36.6 ms after show request (js nav_ms=29190.7)
+[1792283385607] panel hidden (blur)
+[1792283385637] show()+set_focus() returned in 22.99 ms
+[1792283385666] RESULT phase=after-show painted 52.6 ms after show request (js nav_ms=29324.1)
+[1792283385783] panel hidden (blur)
+[1792283385878] show()+set_focus() returned in 13.59 ms
+[1792283385899] RESULT phase=after-show painted 34.8 ms after show request (js nav_ms=29557.6)
+[1792283388729] panel hidden (blur)
+[1792283388861] show()+set_focus() returned in 12.44 ms
+[1792283388884] RESULT phase=after-show painted 34.9 ms after show request (js nav_ms=32540.8)
+[1792283389016] panel hidden (blur)
+[1792283389047] show()+set_focus() returned in 25.47 ms
+[1792283389066] RESULT phase=after-show painted 45.1 ms after show request (js nav_ms=32724.3)
+[1792283389201] panel hidden (blur)
+[1792283389293] show()+set_focus() returned in 13.05 ms
+[1792283389316] RESULT phase=after-show painted 36.1 ms after show request (js nav_ms=32974.2)
+[1792283389399] panel hidden (blur)
+[1792283389431] show()+set_focus() returned in 25.48 ms
+[1792283389466] RESULT phase=after-show painted 60.9 ms after show request (js nav_ms=33124.1)
+[1792283389576] panel hidden (blur)
+[1792283389669] show()+set_focus() returned in 13.11 ms
+[1792283389699] RESULT phase=after-show painted 43.0 ms after show request (js nav_ms=33357.5)
+[1792283389753] panel hidden (blur)
+[1792283389786] show()+set_focus() returned in 25.75 ms
+[1792283389799] RESULT phase=after-show painted 39.9 ms after show request (js nav_ms=33457.5)
+[1792283390407] panel hidden (blur)
+[1792283390511] show()+set_focus() returned in 14.21 ms
+[1792283390533] RESULT phase=after-show painted 36.3 ms after show request (js nav_ms=34191.0)
+[1792283391057] panel hidden (blur)
+[1792283391141] show()+set_focus() returned in 12.89 ms
+[1792283391166] RESULT phase=after-show painted 37.4 ms after show request (js nav_ms=34824.2)
+[1792283393314] panel hidden (blur)
+[1792283406030] show()+set_focus() returned in 12.78 ms
+[1792283406050] RESULT phase=after-show painted 33.6 ms after show request (js nav_ms=49707.7)
+[1792283406345] panel hidden (blur)
+[1792283406374] show()+set_focus() returned in 23.62 ms
+[1792283406399] RESULT phase=after-show painted 49.0 ms after show request (js nav_ms=50057.6)
+[1792283406926] panel hidden (blur)

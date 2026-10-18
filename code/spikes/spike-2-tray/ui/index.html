@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Spike2</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #141414; color: #eaeaea; font-family: "Segoe UI", sans-serif; overflow: hidden; }
+    .hdr { padding: 10px 14px; font-weight: 600; background: #1d1d1d; border-bottom: 1px solid #333; }
+    .body { padding: 14px; font-size: 14px; line-height: 1.7; }
+    #meta { color: #8ec07c; font-family: Consolas, monospace; }
+  </style>
+</head>
+<body>
+  <div class="hdr">Spike-2 Panel</div>
+  <div class="body">
+    <p>اللوحة تعمل — هذا اختبار قياس زمن الإظهار.</p>
+    <p id="meta"></p>
+  </div>
+  <script>
+    const t = window.__TAURI__;
+    const meta = document.getElementById('meta');
+    let startupReported = false;
+
+    function report(phase) {
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        t.core.invoke('spike_painted', { navMs: performance.now(), phase });
+      }));
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      meta.textContent = 'nav_ms=' + performance.now().toFixed(1);
+      if (!startupReported) { startupReported = true; report('startup'); }
+    });
+
+    t.event.listen('spike:show', () => report('after-show'));
+  </script>
+</body>
+</html>
