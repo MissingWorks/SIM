@@ -13,7 +13,7 @@
 
 ```
 ┌───────────────────────────────────────────────────────────────┐
-│                         winsuite-core                          │
+│                         sim-core                          │
 │   (Rust خالص — بلا واجهة — قابل للاختبار بالكامل عبر CLI)      │
 │                                                                │
 │  clipboard/  ── مستمع WM_CLIPBOARDUPDATE + قراءة/كتابة         │
@@ -26,7 +26,7 @@
                               │ EngineHandle API
         ┌─────────────────────┼──────────────────────┐
         ▼                     ▼                      ▼
- winsuite-desktop      winsuite-egui          winsuite-cli
+ sim-desktop      sim-egui          sim-cli
  (Tauri — Plan A)      (بديل — Plan B)        (تطوير/اختبار)
 ```
 
@@ -37,7 +37,7 @@ code/
 ├─ Cargo.toml                        # workspace + shared [workspace.dependencies]
 ├─ rust-toolchain.toml               # تثبيت إصدار Rust المستقر
 ├─ crates/
-│  ├─ winsuite-core/
+│  ├─ sim-core/
 │  │  └─ src/
 │  │     ├─ lib.rs                   # يصدّر Engine, Config, Clip, Event...
 │  │     ├─ error.rs                 # CoreError (thiserror) + تصنيف الأخطاء
@@ -62,9 +62,9 @@ code/
 │  │        ├─ window.rs             # مساعد نافذة الرسائل (HWND_MESSAGE)
 │  │        ├─ process.rs            # PID/اسم العملية من HWND (للاستبعاد)
 │  │        └─ autostart.rs          # مفتاح Run كاحتياطي مستقل
-│  ├─ winsuite-cli/
+│  ├─ sim-cli/
 │  │  └─ src/main.rs                 # list/watch/pause/config/bench — للاختبار بلا واجهة
-│  └─ winsuite-desktop/
+│  └─ sim-desktop/
 │     ├─ tauri.conf.json             # إعداد النوافذ (الجدول أدناه)
 │     ├─ capabilities/default.json   # صلاحيات الإضافات
 │     ├─ icons/                      # أيقونات التطبيق والـ Tray
@@ -109,7 +109,7 @@ code/
 ## واجهة EngineHandle البرمجية (الشكل الملزم)
 
 ```rust
-// winsuite-core/src/model.rs
+// sim-core/src/model.rs
 #[derive(Clone, Copy, PartialEq, Eq, Hash, Debug)]
 pub struct ClipId(pub i64);
 
@@ -132,7 +132,7 @@ pub struct ListQuery {
     pub offset: u32,
 }
 
-// winsuite-core/src/engine.rs
+// sim-core/src/engine.rs
 pub struct EngineHandle { /* Arc<EngineInner> */ }
 
 impl EngineHandle {
@@ -168,7 +168,7 @@ impl EngineHandle {
 ```
 
 ```rust
-// winsuite-core/src/events.rs
+// sim-core/src/events.rs
 #[derive(Clone, Debug)]
 pub enum Event {
     ClipAdded { id: ClipId },        // عنصر جديد (تحديث فوري للواجهة إن مفتوحة)
@@ -183,7 +183,7 @@ pub enum Event {
 ## مخطط الإعدادات (config.toml)
 
 ```toml
-# %APPDATA%\WinSuite\config.toml  —  يُدار من مركز التحكم فقط
+# %APPDATA%\SIM\config.toml  —  يُدار من مركز التحكم فقط
 schema_version = 1
 
 [general]
@@ -363,7 +363,7 @@ CREATE INDEX IF NOT EXISTS clips_pinned_idx  ON clips(pinned) WHERE pinned = 1;
 
 ## السجلات والأخطاء
 
-- `logs/winsuite.log` دوّار يوميًا، الاحتفاظ بآخر 7 ملفات، مستوى Info افتراضي، Debug عبر متغير بيئة.
+- `logs/sim.log` دوّار يوميًا، الاحتفاظ بآخر 7 ملفات، مستوى Info افتراضي، Debug عبر متغير بيئة.
 - **ممنوع كتابة محتوى أي عنصر حافظة في السجل** — فقط: نوع العنصر، حجمه، القرار الذي اتُخذ (stored/skipped-dup/skipped-excluded/skipped-big).
 - تصنيف الأخطاء (`CoreError`):
   - `Transient` (حافظة مشغولة، قاعدة مقفولة لحظيًا) → إعادة محاولة محدودة.
