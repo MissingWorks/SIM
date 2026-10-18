@@ -1,0 +1,3 @@
+Hello World 12345 — English baseline
+مرحبا بالعالم — اختبار عربي ١٢٣
+test 🚀📋✅😀 end

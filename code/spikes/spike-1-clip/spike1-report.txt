@@ -1,0 +1,147 @@
+[1792283853868] watch started (pid=14972) polling every 50ms
+[1792283853869] baseline seq=414
+[1792283854821] copied (text-en): len=36 preview="Hello World 12345 — English baseline"
+[1792283854827] === EVENT seq=419 ===
+[1792283854828] owner: hwnd=None pid=None is_us=false
+[1792283854829] formats(4): CF_UNICODETEXT(13), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792283854829] marker_present=false
+[1792283854833] win text: ok 3.00ms len=36 arabic=0 emoji=0 preview="Hello World 12345 — English baseline"
+[1792283854837] win dib: err 0.53ms OSError(1168): Element not found.
+[1792283854838] win files: err 0.06ms OSError(1168): Element not found.
+[1792283854839] ar text: ok 0.18ms len=36 arabic=0 emoji=0
+[1792283854839] ar image: err 0.08ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792283854840] === END EVENT ===
+[1792283854856] copied (text-ar): len=31 preview="مرحبا بالعالم — اختبار عربي ١٢٣"
+[1792283854890] copied (text-emoji): len=13 preview="test 🚀📋✅😀 end"
+[1792283854891] === EVENT seq=429 ===
+[1792283854892] owner: hwnd=None pid=None is_us=false
+[1792283854893] formats(4): CF_UNICODETEXT(13), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792283854893] marker_present=false
+[1792283854894] win text: ok 0.08ms len=13 arabic=0 emoji=4 preview="test 🚀📋✅😀 end"
+[1792283854895] win dib: err 0.06ms OSError(1168): Element not found.
+[1792283854896] win files: err 0.09ms OSError(1168): Element not found.
+[1792283854897] ar text: ok 0.08ms len=13 arabic=0 emoji=4
+[1792283854897] ar image: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792283854898] === END EVENT ===
+[1792283854925] copied (marked): text + SIMSpikeMarker format
+[1792283854949] === EVENT seq=435 ===
+[1792283854949] owner: hwnd=None pid=None is_us=false
+[1792283854950] formats(5): CF_UNICODETEXT(13), SIMSpikeMarker(49873), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792283854951] marker_present=true
+[1792283854951] win text: ok 0.09ms len=44 arabic=0 emoji=0 preview="marked copy from spike (self-detection test)"
+[1792283854952] win dib: err 0.07ms OSError(1168): Element not found.
+[1792283854953] win files: err 0.17ms OSError(1168): Element not found.
+[1792283854953] ar text: ok 0.07ms len=44 arabic=0 emoji=0
+[1792283854954] ar image: err 0.11ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792283854954] === END EVENT ===
+[1792283870118] copied (text-ar): len=31 preview="مرحبا بالعالم — اختبار عربي ١٢٣"
+[1792283870151] === EVENT seq=440 ===
+[1792283870152] owner: hwnd=None pid=None is_us=false
+[1792283870152] formats(4): CF_UNICODETEXT(13), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792283870153] marker_present=false
+[1792283870153] win text: ok 0.10ms len=31 arabic=25 emoji=0 preview="مرحبا بالعالم — اختبار عربي ١٢٣"
+[1792283870154] win dib: err 0.25ms OSError(1168): Element not found.
+[1792283870155] win files: err 0.07ms OSError(1168): Element not found.
+[1792283870156] ar text: ok 0.07ms len=31 arabic=25 emoji=0
+[1792283870156] ar image: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792283870157] === END EVENT ===
+[1792284014225] === EVENT seq=447 ===
+[1792284014226] owner: hwnd=Some(5703778) pid=Some(10728) is_us=false
+[1792284014227] formats(6): HTML Format(49383), CF_UNICODETEXT(13), Chromium internal source URL(49334), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792284014227] marker_present=false
+[1792284014228] win text: ok 0.19ms len=12 arabic=0 emoji=0 preview="devops_22311"
+[1792284014229] win dib: err 0.12ms OSError(1168): Element not found.
+[1792284014230] win files: err 0.24ms OSError(1168): Element not found.
+[1792284014231] ar text: ok 0.44ms len=12 arabic=0 emoji=0
+[1792284014231] ar image: err 0.12ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284014232] === END EVENT ===
+[1792284019974] === EVENT seq=456 ===
+[1792284019975] owner: hwnd=Some(525224) pid=Some(1664) is_us=false
+[1792284019977] formats(8): DataObject(49161), CF_LOCALE(16), CF_UNICODETEXT(13), ExcludeClipboardContentFromMonitorProcessing(49750), ClipboardHistoryItemId(49755), Ole Private Data(49171), CF_TEXT(1), CF_OEMTEXT(7)
+[1792284019978] marker_present=false
+[1792284019981] win text: ok 2.93ms len=18 arabic=0 emoji=0 preview="Qetuoadgjlxv$@#142"
+[1792284019982] win dib: err 0.29ms OSError(1168): Element not found.
+[1792284019983] win files: err 0.25ms OSError(1168): Element not found.
+[1792284019984] ar text: ok 0.38ms len=18 arabic=0 emoji=0
+[1792284019984] ar image: err 0.23ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284019985] === END EVENT ===
+[1792284032671] === EVENT seq=464 ===
+[1792284032672] owner: hwnd=Some(590860) pid=Some(18160) is_us=false
+[1792284032674] formats(7): HTML Format(49383), CF_UNICODETEXT(13), Chromium internal source RFH token(49746), Chromium internal source URL(49334), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792284032674] marker_present=false
+[1792284032675] win text: ok 0.09ms len=33 arabic=0 emoji=0 preview="\\r\\nRequest made from\\r\\nEgypt\\r\\n8PYNC"
+[1792284032676] win dib: err 0.26ms OSError(1168): Element not found.
+[1792284032677] win files: err 0.37ms OSError(1168): Element not found.
+[1792284032678] ar text: ok 0.79ms len=33 arabic=0 emoji=0
+[1792284032679] ar image: err 0.59ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284032680] === END EVENT ===
+[1792284033839] === EVENT seq=472 ===
+[1792284033839] owner: hwnd=Some(590860) pid=Some(18160) is_us=false
+[1792284033841] formats(7): HTML Format(49383), CF_UNICODETEXT(13), Chromium internal source RFH token(49746), Chromium internal source URL(49334), CF_LOCALE(16), CF_TEXT(1), CF_OEMTEXT(7)
+[1792284033842] marker_present=false
+[1792284033842] win text: ok 0.21ms len=5 arabic=0 emoji=0 preview="8PYNC"
+[1792284033843] win dib: err 0.14ms OSError(1168): Element not found.
+[1792284033844] win files: err 0.19ms OSError(1168): Element not found.
+[1792284033845] ar text: ok 0.15ms len=5 arabic=0 emoji=0
+[1792284033845] ar image: err 0.07ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284033846] === END EVENT ===
+[1792284147972] === EVENT seq=480 ===
+[1792284147972] owner: hwnd=Some(6359090) pid=Some(24036) is_us=false
+[1792284147974] formats(7): DataObject(49161), CF_TEXT(1), CF_UNICODETEXT(13), EnterpriseDataProtectionId(49332), Ole Private Data(49171), CF_LOCALE(16), CF_OEMTEXT(7)
+[1792284147974] marker_present=false
+[1792284147975] win text: ok 0.27ms len=83 arabic=25 emoji=4 preview="Hello World 12345 — English baseline\\nمرحبا بالعالم — اختبار …"
+[1792284147976] win dib: err 0.09ms OSError(1168): Element not found.
+[1792284147976] win files: err 0.13ms OSError(1168): Element not found.
+[1792284147977] ar text: ok 0.07ms len=83 arabic=25 emoji=4
+[1792284147978] ar image: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284147978] === END EVENT ===
+[1792284167223] === EVENT seq=481 ===
+[1792284167224] owner: hwnd=Some(590860) pid=Some(18160) is_us=false
+[1792284167227] formats(6): PNG(49464), CF_DIBV5(17), Chromium internal source RFH token(49746), Chromium internal source URL(49334), CF_BITMAP(2), CF_DIB(8)
+[1792284167228] marker_present=false
+[1792284167229] win text: err 0.57ms OSError(1168): Element not found.
+[1792284167233] win dib: ok 4.05ms bytes=135464
+[1792284167235] win files: err 0.93ms OSError(1168): Element not found.
+[1792284167236] ar text: err 0.50ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284167238] ar image: ok 1.14ms 184x184 bytes=135424
+[1792284167241] === END EVENT ===
+[1792284167291] === EVENT seq=487 ===
+[1792284167292] owner: hwnd=Some(590860) pid=Some(18160) is_us=false
+[1792284167293] formats(6): PNG(49464), CF_DIBV5(17), Chromium internal source RFH token(49746), Chromium internal source URL(49334), CF_BITMAP(2), CF_DIB(8)
+[1792284167294] marker_present=false
+[1792284167295] win text: err 0.08ms OSError(1168): Element not found.
+[1792284167295] win dib: ok 0.20ms bytes=135464
+[1792284167296] win files: err 0.06ms OSError(1168): Element not found.
+[1792284167297] ar text: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284167298] ar image: ok 0.49ms 184x184 bytes=135424
+[1792284167299] === END EVENT ===
+[1792284195753] === EVENT seq=496 ===
+[1792284195754] owner: hwnd=Some(4917628) pid=Some(24312) is_us=false
+[1792284195755] formats(8): DataObject(49161), CF_BITMAP(2), PNG(49464), CanUploadToCloudClipboard(49594), CanIncludeInClipboardHistory(49595), Ole Private Data(49171), CF_DIB(8), CF_DIBV5(17)
+[1792284195756] marker_present=false
+[1792284195756] win text: err 0.12ms OSError(1168): Element not found.
+[1792284195787] win dib: ok 29.55ms bytes=332692
+[1792284195788] win files: err 0.33ms OSError(1168): Element not found.
+[1792284195788] ar text: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284195801] ar image: ok 12.28ms 308x270 bytes=332640
+[1792284195803] === END EVENT ===
+[1792284196005] === EVENT seq=498 ===
+[1792284196006] owner: hwnd=Some(4917628) pid=Some(24312) is_us=false
+[1792284196008] formats(8): DataObject(49161), CF_BITMAP(2), PNG(49464), CanUploadToCloudClipboard(49594), CanIncludeInClipboardHistory(49595), Ole Private Data(49171), CF_DIB(8), CF_DIBV5(17)
+[1792284196009] marker_present=false
+[1792284196010] win text: err 0.21ms OSError(1168): Element not found.
+[1792284196011] win dib: ok 0.77ms bytes=332692
+[1792284196012] win files: err 0.22ms OSError(1168): Element not found.
+[1792284196012] ar text: err 0.14ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284196013] ar image: ok 0.47ms 308x270 bytes=332640
+[1792284196014] === END EVENT ===
+[1792284202510] === EVENT seq=512 ===
+[1792284202510] owner: hwnd=Some(3934732) pid=Some(14916) is_us=false
+[1792284202512] formats(13): DataObject(49161), Shell IDList Array(49375), DataObjectAttributes(49850), DataObjectAttributesRequiringElevation(49859), Preferred DropEffect(49384), AsyncFlag(49400), CF_HDROP(15), FileName(49158), FileContents(49331), FileNameW(49159), FileGroupDescriptorW(49379), ZoneIdentifier(49402), Ole Private Data(49171)
+[1792284202512] marker_present=false
+[1792284202513] win text: err 0.11ms OSError(1168): Element not found.
+[1792284202514] win dib: err 0.20ms OSError(1168): Element not found.
+[1792284202517] win files: ok 2.61ms count=2 ["D:\\Projects\\SIM\\code\\spikes\\spike-1-clip\\spike1-report.txt", "D:\\Projects\\SIM\\code\\spikes\\spike-1-clip\\test-texts.txt"]
+[1792284202518] ar text: err 0.06ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284202519] ar image: err 0.43ms The clipboard contents were not available in the requested format or the clipboard is empty.
+[1792284202519] === END EVENT ===
