@@ -1,0 +1,58 @@
+=== Spike-4 probe: alternative combos (registration only) ===
+Ctrl+Alt+1: ok
+Ctrl+Alt+2: ok
+Ctrl+Alt+3: ok
+Ctrl+Alt+4: ok
+Ctrl+Alt+5: ok
+Ctrl+Alt+6: ok
+Ctrl+Alt+7: ok
+Ctrl+Alt+8: ok
+Ctrl+Alt+9: ok
+Win+Shift+1: FAILED 0x80070581
+Win+Shift+2: FAILED 0x80070581
+Win+Shift+3: FAILED 0x80070581
+Win+Shift+4: FAILED 0x80070581
+Win+Shift+5: FAILED 0x80070581
+Win+Shift+6: FAILED 0x80070581
+Win+Shift+7: FAILED 0x80070581
+Win+Shift+8: FAILED 0x80070581
+Win+Shift+9: FAILED 0x80070581
+Ctrl+Shift+1: ok
+Ctrl+Shift+2: ok
+Ctrl+Shift+3: ok
+Ctrl+Shift+4: ok
+Ctrl+Shift+5: ok
+Ctrl+Shift+6: ok
+Ctrl+Shift+7: ok
+Ctrl+Shift+8: ok
+Ctrl+Shift+9: ok
+Win+Alt+Shift+1: ok
+Win+Alt+Shift+2: ok
+Win+Alt+Shift+3: ok
+Win+Alt+Shift+4: ok
+Win+Alt+Shift+5: ok
+Win+Alt+Shift+6: ok
+Win+Alt+Shift+7: ok
+Win+Alt+Shift+8: ok
+Win+Alt+Shift+9: ok
+Ctrl+Win+1: FAILED 0x80070581
+Ctrl+Win+2: FAILED 0x80070581
+Ctrl+Win+3: FAILED 0x80070581
+Ctrl+Win+4: FAILED 0x80070581
+Ctrl+Win+5: FAILED 0x80070581
+Ctrl+Win+6: FAILED 0x80070581
+Ctrl+Win+7: FAILED 0x80070581
+Ctrl+Win+8: FAILED 0x80070581
+Ctrl+Win+9: FAILED 0x80070581
+Win+Ctrl+Alt+1: ok
+Win+Ctrl+Alt+2: ok
+Win+Ctrl+Alt+3: ok
+Win+Ctrl+Alt+4: ok
+Win+Ctrl+Alt+5: ok
+Win+Ctrl+Alt+6: ok
+Win+Ctrl+Alt+7: ok
+Win+Ctrl+Alt+8: ok
+Win+Ctrl+Alt+9: ok
+Ctrl+Alt+V: ok
+Win+Shift+V: FAILED 0x80070581
+probe done.

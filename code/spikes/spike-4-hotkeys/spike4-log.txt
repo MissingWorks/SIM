@@ -1,0 +1,69 @@
+[1792286717862] === Spike-4: global hotkeys (SIM phase 0) ===
+[1792286717863] press Win+Alt+V then Win+Alt+1..9 — phase 1 waits 45s, phase 2 waits 20s after re-register
+[1792286717865] [phase1] REGISTER Win+Alt+V: ok (id=1)
+[1792286717866] [phase1] REGISTER Win+Alt+1: FAILED code=0x80070581 Hot key is already registered.
+[1792286717866] [phase1] REGISTER Win+Alt+2: FAILED code=0x80070581 Hot key is already registered.
+[1792286717867] [phase1] REGISTER Win+Alt+3: FAILED code=0x80070581 Hot key is already registered.
+[1792286717867] [phase1] REGISTER Win+Alt+4: FAILED code=0x80070581 Hot key is already registered.
+[1792286717867] [phase1] REGISTER Win+Alt+5: FAILED code=0x80070581 Hot key is already registered.
+[1792286717868] [phase1] REGISTER Win+Alt+6: FAILED code=0x80070581 Hot key is already registered.
+[1792286717868] [phase1] REGISTER Win+Alt+7: FAILED code=0x80070581 Hot key is already registered.
+[1792286717869] [phase1] REGISTER Win+Alt+8: FAILED code=0x80070581 Hot key is already registered.
+[1792286717869] [phase1] REGISTER Win+Alt+9: FAILED code=0x80070581 Hot key is already registered.
+[1792286717869] phase1: waiting for key presses (45s max)...
+[1792286744864] [phase1] FIRED Win+Alt+V (id=1) at 27.0s
+[1792286762870] [phase1] NOT PRESSED: Win+Alt+1
+[1792286762870] [phase1] NOT PRESSED: Win+Alt+2
+[1792286762870] [phase1] NOT PRESSED: Win+Alt+3
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+4
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+5
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+6
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+7
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+8
+[1792286762871] [phase1] NOT PRESSED: Win+Alt+9
+[1792286762872] phase1: 1/10 hotkeys fired
+[1792286762872] 
+[1792286762872] re-register cycle (settings change simulation)...
+[1792286762872] [cycle] UNREGISTER Win+Alt+V: ok
+[1792286762872] [cycle] UNREGISTER Win+Alt+1: err Hot key is not registered. (0x8007058B)
+[1792286762872] [cycle] UNREGISTER Win+Alt+2: err Hot key is not registered. (0x8007058B)
+[1792286762872] [cycle] UNREGISTER Win+Alt+3: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+4: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+5: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+6: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+7: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+8: err Hot key is not registered. (0x8007058B)
+[1792286762873] [cycle] UNREGISTER Win+Alt+9: err Hot key is not registered. (0x8007058B)
+[1792286762873] [phase2] REGISTER Win+Alt+V: ok (id=1)
+[1792286762874] [phase2] REGISTER Win+Alt+1: FAILED code=0x80070581 Hot key is already registered.
+[1792286762874] [phase2] REGISTER Win+Alt+2: FAILED code=0x80070581 Hot key is already registered.
+[1792286762874] [phase2] REGISTER Win+Alt+3: FAILED code=0x80070581 Hot key is already registered.
+[1792286762874] [phase2] REGISTER Win+Alt+4: FAILED code=0x80070581 Hot key is already registered.
+[1792286762874] [phase2] REGISTER Win+Alt+5: FAILED code=0x80070581 Hot key is already registered.
+[1792286762874] [phase2] REGISTER Win+Alt+6: FAILED code=0x80070581 Hot key is already registered.
+[1792286762875] [phase2] REGISTER Win+Alt+7: FAILED code=0x80070581 Hot key is already registered.
+[1792286762875] [phase2] REGISTER Win+Alt+8: FAILED code=0x80070581 Hot key is already registered.
+[1792286762875] [phase2] REGISTER Win+Alt+9: FAILED code=0x80070581 Hot key is already registered.
+[1792286762875] phase2: waiting for key presses (20s max) — press Win+Alt+V again...
+[1792286782883] [phase2] NOT PRESSED: Win+Alt+V
+[1792286782883] [phase2] NOT PRESSED: Win+Alt+1
+[1792286782883] [phase2] NOT PRESSED: Win+Alt+2
+[1792286782883] [phase2] NOT PRESSED: Win+Alt+3
+[1792286782883] [phase2] NOT PRESSED: Win+Alt+4
+[1792286782884] [phase2] NOT PRESSED: Win+Alt+5
+[1792286782884] [phase2] NOT PRESSED: Win+Alt+6
+[1792286782884] [phase2] NOT PRESSED: Win+Alt+7
+[1792286782884] [phase2] NOT PRESSED: Win+Alt+8
+[1792286782884] [phase2] NOT PRESSED: Win+Alt+9
+[1792286782884] phase2: 0/10 hotkeys fired
+[1792286782885] [cleanup] UNREGISTER Win+Alt+V: ok
+[1792286782885] [cleanup] UNREGISTER Win+Alt+1: err Hot key is not registered. (0x8007058B)
+[1792286782885] [cleanup] UNREGISTER Win+Alt+2: err Hot key is not registered. (0x8007058B)
+[1792286782885] [cleanup] UNREGISTER Win+Alt+3: err Hot key is not registered. (0x8007058B)
+[1792286782885] [cleanup] UNREGISTER Win+Alt+4: err Hot key is not registered. (0x8007058B)
+[1792286782886] [cleanup] UNREGISTER Win+Alt+5: err Hot key is not registered. (0x8007058B)
+[1792286782886] [cleanup] UNREGISTER Win+Alt+6: err Hot key is not registered. (0x8007058B)
+[1792286782886] [cleanup] UNREGISTER Win+Alt+7: err Hot key is not registered. (0x8007058B)
+[1792286782886] [cleanup] UNREGISTER Win+Alt+8: err Hot key is not registered. (0x8007058B)
+[1792286782886] [cleanup] UNREGISTER Win+Alt+9: err Hot key is not registered. (0x8007058B)
+[1792286782887] done.
